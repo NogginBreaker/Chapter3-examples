@@ -1,7 +1,5 @@
 package Circle;
-
 import java.util.Scanner;
-
 /*
  * Zachary Moncur
  * 9/12
@@ -19,7 +17,8 @@ public class area_circle {
 		Scanner input = new Scanner(System.in);
 		
 		//Constants
-		double PI = 3.141592653589793238462643383279502884197169399375105820974944592307816406;
+		final double PI = 3.141592653589793238462643383279502884197169399375105820974944592307816406;
+		
 		//Variables
 		double radius;
 		double area;
@@ -27,9 +26,9 @@ public class area_circle {
 		radius = input.nextDouble();
 		area = radius*radius*PI;
 		
-		System.out.println("the area of your circle is: " + area +"\"");
+		System.out.println("the area of your circle is: " 
+		+ area +"\"");
 		
-
 	}
 
 }
